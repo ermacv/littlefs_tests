@@ -28,7 +28,7 @@ static struct lfs_config cfg = {
 
 // entry point
 int main(void) {
-  int err = lfs_filebd_create(&cfg, "emulated_fs/file.lfs");
+  int err = lfs_filebd_create(&cfg, "file.lfs");
   if (err) {
     printf("Cannot initialize memory for filedb\r\n");
     return -1;
