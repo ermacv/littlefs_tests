@@ -61,4 +61,5 @@ int main(void) {
 
   // print the boot count
   printf("boot_count: %d\n", boot_count);
+  lfs_rambd_destroy(&cfg);
 }
